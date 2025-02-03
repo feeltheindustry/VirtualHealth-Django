@@ -1,0 +1,21 @@
+<!-- templates/accounts/profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+</head>
+<body>
+    <h2>Welcome, {{ user.name }}!</h2>
+    <img src="{{ user.profile_picture.url }}" alt="Profile Picture" width="150" height="150">
+    <p>Email: {{ user.email }}</p>
+    <p>Role: {{ user.role|capfirst }}</p>
+    <p>Contact Details: {{ user.contact_details }}</p>
+
+    <h3>Actions:</h3>
+    <ul>
+        <li><a href="{% url 'update_profile' %}">Update Profile</a></li>
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- templates/accounts/patient_dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Dashboard</title>
+</head>
+<body>
+    <h2>Patient Dashboard</h2>
+    <h3>Welcome, {{ user.name }}!</h3>
+
+    <h4>Book a Consultation:</h4>
+    <ul>
+        <li><a href="#">Book an Appointment</a></li>
+        <li><a href="#">View Available Doctors</a></li>
+    </ul>
+
+    <h4>Your Health Records:</h4>
+    <ul>
+        <li><a href="#">View Medical Records</a></li>
+        <li><a href="#">Upload Health Data</a></li>
+    </ul>
+
+    <h4>Other Actions:</h4>
+    <ul>
+        <li><a href="#">Update Profile</a></li>
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+    </ul>
+</body>
+</html>

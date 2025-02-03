@@ -1,0 +1,30 @@
+<!-- templates/accounts/doctor_dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Dashboard</title>
+</head>
+<body>
+    <h2>Doctor Dashboard</h2>
+    <h3>Welcome, Dr. {{ user.name }}!</h3>
+
+    <h4>Your Schedule:</h4>
+    <ul>
+        <li><a href="#">View Available Slots</a></li>
+        <li><a href="#">Manage Appointments</a></li>
+    </ul>
+
+    <h4>Patient Consultations:</h4>
+    <ul>
+        <li><a href="#">View Consultation History</a></li>
+        <li><a href="#">Add Prescription</a></li>
+    </ul>
+
+    <h4>Other Actions:</h4>
+    <ul>
+        <li><a href="#">Update Profile</a></li>
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+    </ul>
+</body>
+</html>
