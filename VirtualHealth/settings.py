@@ -45,6 +45,7 @@ LOCAL_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'core'
 ]
 
 INSTALLED_APPS = THIRD_PARTY_APPS + LOCAL_APPS
@@ -57,6 +58,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+# AUTH_USER_MODEL = 'core.CustomUser'
 
 ROOT_URLCONF = "VirtualHealth.urls"
 
@@ -75,6 +78,7 @@ TEMPLATES = [
         },
     },
 ]
+AUTH_USER_MODEL = 'core.CustomUser'
 
 WSGI_APPLICATION = "VirtualHealth.wsgi.application"
 
@@ -92,6 +96,8 @@ DATABASES = {
         "PORT": os.getenv("DB_PORT"),
     }
 }
+
+
 
 
 # Password validation
