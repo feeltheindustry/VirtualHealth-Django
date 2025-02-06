@@ -1,13 +1,20 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
+<<<<<<< HEAD
+=======
 
+>>>>>>> 1e958c6975d2138ce4b6a9df45588ecf9f349ff8
 import os
 import sys
 
 
 def main():
     """Run administrative tasks."""
+<<<<<<< HEAD
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
+=======
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "VirtualHealth.settings")
+>>>>>>> 1e958c6975d2138ce4b6a9df45588ecf9f349ff8
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -19,5 +26,9 @@ def main():
     execute_from_command_line(sys.argv)
 
 
+<<<<<<< HEAD
+if __name__ == '__main__':
+=======
 if __name__ == "__main__":
+>>>>>>> 1e958c6975d2138ce4b6a9df45588ecf9f349ff8
     main()
